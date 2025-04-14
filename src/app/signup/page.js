@@ -32,7 +32,7 @@ export default function SignupPage() {
       setLoading(true);
       setError("");
       // Replace with your actual API endpoint
-      const response = await axios.post('/api/auth/signup', user);
+      const response = await axios.post('/api/users/signup', user);
       console.log("Signup success", response.data);
       router.push('/login');
     } catch (error) {
